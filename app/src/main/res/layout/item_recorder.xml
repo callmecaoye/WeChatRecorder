@@ -35,10 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/id_recorder_length"
         android:layout_marginRight="3dp"
-        android:textColor="#ff777777"
-        android:text=""
-        />
+        android:textColor="#ff777777" />
 
 </RelativeLayout>
