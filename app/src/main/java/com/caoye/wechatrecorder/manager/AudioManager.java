@@ -4,7 +4,6 @@ import android.media.MediaRecorder;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.UUID;
 
 /**
  * Created by admin on 10/13/16.
@@ -64,6 +63,10 @@ public class AudioManager {
         mMediaRecorder.setOutputFile(file.getAbsolutePath());
         //设置音频源为麦克风
         mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        //设置音频格式
+        mMediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        //设置音频编码
+        mMediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
 
         try {
             mMediaRecorder.prepare();
@@ -126,7 +129,6 @@ public class AudioManager {
             mCurrentFilePath = null;
         }
     }
-
 
     public String getCurFilePath() {
         return mCurrentFilePath;

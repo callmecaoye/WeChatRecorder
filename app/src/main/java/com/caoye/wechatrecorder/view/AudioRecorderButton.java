@@ -1,6 +1,5 @@
 package com.caoye.wechatrecorder.view;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.os.Environment;
 import android.os.Handler;
@@ -9,6 +8,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import com.caoye.wechatrecorder.R;
+import com.caoye.wechatrecorder.manager.AudioManager;
+import com.caoye.wechatrecorder.manager.DialogManager;
 
 /**
  * Created by admin on 10/12/16.
